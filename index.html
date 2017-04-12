@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .check{
+            color:red;
+        }
+        .checked{
+            color:yellowgreen;
+            font-size:20px;
+            font-weight:600;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div v-html="html"></div>
+    <ul>
+        <li v-for="(item,index) in productList">
+            <div v-bind:class="{'check':item.checked}"
+            @click="selectedProduct(item)">
+             选择
+            </div>
+            <img v-bind:src="item.productImage" alt="">
+            <div>{{index}}</div>
+            {{item.productPrice|formatMoney}}
+            <a href="javascript:void(0);" @click="changemoney(item,-1)">-</a>
+            <input type="text" value="0" disabled v-model="item.productQuentity">
+            <a href="javascript:void(0);" @click="changemoney(item,1)">+</a>
+            <div>{{item.productQuentity*item.productPrice|money('元')}}</div>
+            <div class="item-include">
+                <dl>
+                    <dt>赠送：</dt>
+                    <dd v-for="part in item.parts" v-text="part.partsName"></dd>
+                </dl>
+            </div>
+
+        </li>
+    </ul>
+   <div :class="{'checked':checkAllFlag}"  @click="checkAll(true)"> 全选 </div>
+    <div  @click="checkAll(false)">取消全选</div>
+
+
+    <div></div>
+</div>
+<script src="js/lib/vue.js"></script>
+<script src="js/lib/vue-resource.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

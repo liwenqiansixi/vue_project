@@ -1,0 +1,38 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "addressId": "10010",
+      "username": "jack",
+      "postCode": "100100",
+      "streetName": "北京海淀区西三旗",
+      "tel": "12345678",
+      "isDefault": true
+    },
+    {
+      "addressId": "10011",
+      "username": "jack",
+      "postCode": "100100",
+      "tel": "12345678",
+      "streetName": "北京海淀区西三旗",
+      "isDefault": false
+    },
+    {
+      "addressId": "10012",
+      "username": "jack",
+      "postCode": "100100",
+      "tel": "12345678",
+      "streetName": "北京海淀区西三旗",
+      "isDefault": false
+    },
+    {
+      "addressId": "10013",
+      "username": "jack",
+      "postCode": "100100",
+      "tel": "12345678",
+      "streetName": "北京海淀区西三旗",
+      "isDefault": false
+    }
+  ],
+  "message": ""
+}

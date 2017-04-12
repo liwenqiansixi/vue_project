@@ -1,0 +1,65 @@
+{
+  "status": 1,
+  "result": {
+    "totalMoney": 59,
+    "list": [
+      {
+        "productId": "600100002115",
+        "productName": "HUANGHELOU",
+        "productPrice": 19,
+        "productQuentity": 1,
+        "productImage": "img/goods-1.png",
+        "parts": [
+          {
+            "partsId": "10010",
+            "partsName": "DAHUOJI"
+          },
+          {
+            "partsId": "10011",
+            "partsName": "xxx"
+          }
+        ]
+      },
+      {
+        "productId": "600100002115",
+        "productName": "HUANGHELOU",
+        "productPrice": 19,
+        "productQuentity": 1,
+        "productImage": "img/goods-1.png",
+        "parts": [
+          {
+            "partsId": "10010",
+            "partsName": "DAHUOJI"
+          }
+        ]
+      },
+      {
+        "productId": "600100002115",
+        "productName": "HUANGHELOU",
+        "productPrice": 19,
+        "productQuentity": 1,
+        "productImage": "img/goods-1.png",
+        "parts": [
+          {
+            "partsId": "10010",
+            "partsName": "DAHUOJI"
+          }
+        ]
+      },
+      {
+        "productId": "600100002115",
+        "productName": "HUANGHELOU",
+        "productPrice": 19,
+        "productQuentity": 1,
+        "productImage": "img/goods-1.png",
+        "parts": [
+          {
+            "partsId": "10010",
+            "partsName": "DAHUOJI"
+          }
+        ]
+      }
+    ]
+  },
+  "message": ""
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .checked{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<div id="address">
+    <ul>
+        <li v-for="(item,index) in filterAddress" v-bind:class="{'check':index==currentIndex}" @click="currentIndex=index">
+            <dt>{{item.username}}</dt>
+            <dd>{{item.streetName}}</dd>
+            <dd>{{item.tel}}</dd>
+            <dd v-if="item.isDefault">默认地址</dd>
+            <dd v-if="!item.isDefault" @click="setDefault(item.addressId)">设置为默认地址</dd>
+        </li>
+    </ul>
+    <div @click="moreItem()" v-html="more"></div>
+    <!--<div @click="moreItem()">点击收起</div>-->
+    <!--对于定死的选择-->
+    <div v-bind:class="{'checked':shopway==1}" @click="shopway=1">标准配送 <span>free</span></div>
+    <div v-bind:class="{'checked':shopway==2}" @click="shopway=2">高级配送 <span>180</span></div>
+
+</div>
+<script src="js/lib/vue.js"></script>
+<script src="js/lib/vue-resource.js"></script>
+<script src="js/address.js"></script>
+</body>
+</html>
